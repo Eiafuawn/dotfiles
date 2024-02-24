@@ -1,6 +1,0 @@
-require("myschkin.remaps")
-require("myschkin.plugins")
-require("myschkin.options")
-require("myschkin.sets")
-require("myschkin.neovide")
-require("myschkin.diagnostics")
