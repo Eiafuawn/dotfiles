@@ -13,4 +13,4 @@ wk.register({
     p = { builtin.live_grep, 'Find String in Project' },
     ['?'] = { builtin.oldfiles, 'Find Recent Files' },
   }
-})
+}, { prefix = '<leader>' })

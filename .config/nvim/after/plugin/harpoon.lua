@@ -32,4 +32,4 @@ wk.register({
     p = { function() harpoon:list():prev() end, "Harpoon: Previous file" },
     n = { function() harpoon:list():next() end, "Harpoon: Next file" },
   }
-})
+}, { prefix = "<leader>"})
