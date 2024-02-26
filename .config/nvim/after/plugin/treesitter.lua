@@ -43,6 +43,11 @@ require('nvim-treesitter.configs').setup {
       node_decremental = "<bs>",
     },
   },
+
+  autotag = {
+    enable = true,
+  },
+
   textobjects = {
     select = {
       enable = true,
