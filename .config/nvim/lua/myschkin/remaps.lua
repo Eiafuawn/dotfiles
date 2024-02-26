@@ -41,21 +41,9 @@ vim.keymap.set("n", "<leader>so", function() vim.cmd("so") end)
 vim.keymap.set("n", "<leader>ee", "<cmd>:NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>ep", "<cmd>e ~/.config/nvim/lua/myschkin/plugins.lua<CR>");
 vim.keymap.set('n', '<leader><space>', function() require('telescope.builtin').buffers { sort_lastused = true } end)
-vim.keymap.set('n', '<leader>ff', function() require('telescope.builtin').find_files { previewer = false } end)
-vim.keymap.set('n', '<leader>fb', function() require('telescope.builtin').current_buffer_fuzzy_find() end)
-vim.keymap.set('n', '<leader>fh', function() require('telescope.builtin').help_tags() end)
-vim.keymap.set('n', '<leader>ft', function() require('telescope.builtin').tags() end)
-vim.keymap.set('n', '<leader>fd', function() require('telescope.builtin').grep_string() end)
-vim.keymap.set('n', '<leader>fp', function() require('telescope.builtin').live_grep() end)
-vim.keymap.set('n', '<leader>?', function() require('telescope.builtin').oldfiles() end)
 
 -- See after/plugins/harpoon.lua for "<leader>h" remaps
 
-vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
-vim.keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
-vim.keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
-vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
-vim.keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
 vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>");

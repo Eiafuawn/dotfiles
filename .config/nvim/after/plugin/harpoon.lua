@@ -1,4 +1,5 @@
 local harpoon = require('harpoon')
+local wk = require("which-key");
 harpoon:setup({})
 
 -- basic telescope configuration
@@ -19,16 +20,16 @@ local function toggle_telescope(harpoon_files)
   }):find()
 end
 
-vim.keymap.set("n", "<leader>he", function() toggle_telescope(harpoon:list()) end,
-  { desc = "Open harpoon window" })
-vim.keymap.set("n", "<leader>ha", function() harpoon:list():append() end)
-vim.keymap.set("n", "<leader>hd", function () harpoon:list():remove() end)
-
-vim.keymap.set("n", "<leader>hh", function() harpoon:list():select(1) end)
-vim.keymap.set("n", "<leader>hj", function() harpoon:list():select(2) end)
-vim.keymap.set("n", "<leader>hk", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<leader>hl", function() harpoon:list():select(4) end)
-
--- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set("n", "<leader>hp", function() harpoon:list():prev() end)
-vim.keymap.set("n", "<leader>hn", function() harpoon:list():next() end)
+wk.register({
+  h = {
+    e = { function() toggle_telescope(harpoon:list()) end, "Harpoon: Open file" },
+    a = { function() harpoon:list():append() end, "Harpoon: Add file" },
+    d = { function() harpoon:list():remove() end, "Harpoon: Remove file" },
+    h = { function() harpoon:list():select(1) end, "Harpoon: Select file 1" },
+    j = { function() harpoon:list():select(2) end, "Harpoon: Select file 2" },
+    k = { function() harpoon:list():select(3) end, "Harpoon: Select file 3" },
+    l = { function() harpoon:list():select(4) end, "Harpoon: Select file 4" },
+    p = { function() harpoon:list():prev() end, "Harpoon: Previous file" },
+    n = { function() harpoon:list():next() end, "Harpoon: Next file" },
+  }
+})

@@ -1,9 +1,16 @@
 require('telescope').load_extension 'fzf'
+local wk = require('which-key')
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-vim.keymap.set('n', '<leader>ps', function()
-	builtin.grep_string({ search = vim.fn.input("Grep > ") })
-end)
-vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
 
+wk.register({
+  f = {
+    name = 'find',
+    f = { builtin.find_files, 'Find Files' },
+    b = { builtin.buffers, 'Find Buffers' },
+    h = { builtin.help_tags, 'Find Help' },
+    t = { builtin.tags, 'Find Tags' },
+    d = { builtin.grep_string, 'Find String' },
+    p = { builtin.live_grep, 'Find String in Project' },
+    ['?'] = { builtin.oldfiles, 'Find Recent Files' },
+  }
+})
