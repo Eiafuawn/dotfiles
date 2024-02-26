@@ -13,6 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
+  { "nvimtools/none-ls.nvim" },
+  { "windwp/nvim-ts-autotag" },
+  { "alexghergh/nvim-tmux-navigation" },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
