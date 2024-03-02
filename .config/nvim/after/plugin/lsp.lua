@@ -24,7 +24,7 @@ require('mason-lspconfig').setup({
     'jsonls',
     'eslint',
     'bashls',
-    'vuels',
+    'volar',
   },
   handlers = {
     lsp_zero.default_setup,
