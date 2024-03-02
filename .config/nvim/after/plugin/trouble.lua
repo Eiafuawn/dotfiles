@@ -9,4 +9,4 @@ wk.register({
     q = { function() trouble.toggle("quickfix") end, "Toggle Quickfix" },
     l = { function() trouble.toggle("loclist") end, "Toggle Loclist" },
   }
-})
+}, { prefix = "<leader>"})
