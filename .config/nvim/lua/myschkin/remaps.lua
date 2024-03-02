@@ -67,3 +67,6 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 vim.keymap.set('n', '<C-K>', '<cmd>lua vim.diagnostic.open_float(nil, { focusable = false })<CR>',
   { noremap = true, silent = true })
+
+vim.keymap.set('n', '<leader>cd', '<Cmd>cd %:p:h<CR>', { noremap = true, silent = true })
+
