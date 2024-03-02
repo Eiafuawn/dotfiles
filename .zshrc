@@ -4,7 +4,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 source $HOME/.zsh/aliases
 source $HOME/.zsh/exports
-eval "$(jump shell)"
+eval "$(zoxide init zsh)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
