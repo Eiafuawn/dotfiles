@@ -29,5 +29,3 @@ vim.diagnostic.config({
 vim.cmd([[
 set signcolumn=yes
 ]])
-
-vim.keymap.set('n', '<C-S-k>', '<cmd>lua vim.diagnostic.open_float(nil, { focusable = false })<CR>', { noremap = true, silent = true })
