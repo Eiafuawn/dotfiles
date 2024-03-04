@@ -38,10 +38,6 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>so", function() vim.cmd("so") end)
 
-vim.keymap.set("n", "<leader>ee", "<cmd>:NvimTreeToggle<CR>")
-vim.keymap.set("n", "<leader>ep", "<cmd>e ~/.config/nvim/lua/myschkin/plugins.lua<CR>");
-vim.keymap.set('n', '<leader><space>', function() require('telescope.builtin').buffers { sort_lastused = true } end)
-
 -- See after/plugins/harpoon.lua for "<leader>h" remaps
 
 vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
