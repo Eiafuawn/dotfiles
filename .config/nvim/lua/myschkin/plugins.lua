@@ -44,15 +44,10 @@ require("lazy").setup({
     opts = {},
   },
   {
-    "nvim-tree/nvim-tree.lua",
-    version = "*",
-    lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("nvim-tree").setup {}
-    end,
+    'stevearc/oil.nvim',
+    opts = {},
+    -- Optional dependencies
+    dependencies = { "nvim-tree/nvim-web-devicons" },
   },
   { "stevearc/dressing.nvim",              opts = {} },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
