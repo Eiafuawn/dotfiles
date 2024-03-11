@@ -1,10 +1,23 @@
-alias grep='grep --color=auto'
+# Networking
 alias homelab='kitten ssh myschkin@192.168.1.52 -i /home/myschkin/.ssh/homelab'
 alias sshpi='kitten ssh pipi@192.168.1.165 -i /home/myschkin/.ssh/pi -p 2444'
-alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
+
+# Better term
+alias grep='grep --color=auto'
 alias ls='exa'
 alias la='exa -a'
 alias ll='exa -l'
 alias lla='exa -la'
 alias cat='bat --theme Dracula'
 alias cd='z'
+
+# Git
+alias lg='lazygit'
+alias gc='git commit -m'
+alias gca='git commit -am'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gcm='git checkout main'
+alias gpl='git pull'
+alias gps='git push'
+alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
