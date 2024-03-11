@@ -22,6 +22,7 @@ end
 
 wk.register({
   h = {
+    name = "Harpoon",
     e = { function() toggle_telescope(harpoon:list()) end, "Harpoon: Open file" },
     a = { function() harpoon:list():append() end, "Harpoon: Add file" },
     d = { function() harpoon:list():remove() end, "Harpoon: Remove file" },
