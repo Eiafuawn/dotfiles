@@ -31,6 +31,7 @@ require("lazy").setup({
       "nvim-telescope/telescope.nvim",
     },
   },
+  { "lervag/vimtex" },
   { "nvimtools/none-ls.nvim" },
   { "windwp/nvim-ts-autotag" },
   { "alexghergh/nvim-tmux-navigation" },
