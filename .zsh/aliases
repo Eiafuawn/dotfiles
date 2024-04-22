@@ -10,6 +10,7 @@ alias ll='exa -l'
 alias lla='exa -la'
 alias cat='bat --theme Dracula'
 alias cd='z'
+alias nf='neofetch'
 
 # Git
 alias lg='lazygit'
