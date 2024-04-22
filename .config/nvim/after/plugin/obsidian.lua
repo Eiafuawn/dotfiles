@@ -1,4 +1,4 @@
-require("obsidian").setup {
+--[[ require("obsidian").setup {
   workspaces = {
     {
       name = "perso",
@@ -13,4 +13,4 @@ require("obsidian").setup {
     nvim_cmp = true,
     min_chars = 2,
   },
-}
+} ]]

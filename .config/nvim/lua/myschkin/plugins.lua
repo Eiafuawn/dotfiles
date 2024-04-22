@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
-  {
+  --[[ {
     "epwalsh/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
@@ -30,9 +30,9 @@ require("lazy").setup({
       "hrsh7th/nvim-cmp",
       "nvim-telescope/telescope.nvim",
     },
-  },
-  { "lervag/vimtex" },
-  { "nvimtools/none-ls.nvim" },
+  }, ]]
+  -- { "lervag/vimtex" },
+  -- { "nvimtools/none-ls.nvim" },
   { "windwp/nvim-ts-autotag" },
   { "alexghergh/nvim-tmux-navigation" },
   {
