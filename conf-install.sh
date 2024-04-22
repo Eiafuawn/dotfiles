@@ -11,8 +11,8 @@ git clone git@github.com:Eiafuawn/dwmblocks.git $conf/dwmblocks
 
 # Make install for each
 sudo make clean install -C $conf/dwm
-sudo make clean install -C $conf/dmenu
-sudo make clean install -C $conf/dwmblocks
+# sudo make clean install -C $conf/dmenu
+# sudo make clean install -C $conf/dwmblocks
 
 git clone https://github.com/tmux-plugins/tpm $conf/tmux/plugins/tpm
 
