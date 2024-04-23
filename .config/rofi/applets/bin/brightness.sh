@@ -10,8 +10,8 @@ source "$HOME"/.config/rofi/applets/shared/theme.bash
 theme="$type/$style"
 
 # Brightness Info
-backlight="$(printf "%.0f\n" `light -G`)"
-card="`light -L | grep 'backlight' | head -n1 | cut -d'/' -f3`"
+backlight="$(printf "%.0f\n" `xbacklight -get`)"
+card="`xbacklight -list | grep 'backlight' | head -n1 | cut -d'/' -f3`"
 
 if [[ $backlight -ge 0 ]] && [[ $backlight -le 29 ]]; then
     level="Low"
@@ -79,13 +79,14 @@ run_rofi() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		light -A 5
+    bright_notifs +
 	elif [[ "$1" == '--opt2' ]]; then
-		light -S 25
+    bright_notifs =
 	elif [[ "$1" == '--opt3' ]]; then
-		light -U 5
+    bright_notifs -
 	elif [[ "$1" == '--opt4' ]]; then
-		xfce4-power-manager-settings
+		# xfce4-power-manager-settings
+    kitty -e powertop
 	fi
 }
 
