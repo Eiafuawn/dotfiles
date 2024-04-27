@@ -5,3 +5,5 @@ export VISUAL='nvim'
 export EDITOR='nvim'
 export LOCATION='Lausanne,Switzerland'
 export PATH=$HOME/go/bin:$PATH
+export DOTOOL_XKB_LAYOUT=ch
+export DOTOOL_XKB_VARIANT=fr
