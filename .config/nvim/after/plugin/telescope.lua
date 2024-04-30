@@ -1,6 +1,19 @@
 require('telescope').load_extension 'fzf'
 local wk = require('which-key')
 local builtin = require('telescope.builtin')
+local telescope = require('telescope')
+local actions = require('telescope.actions')
+
+telescope.setup {
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+        ["<C-h>"] = actions.select_horizontal
+      },
+    },
+  },
+}
 
 wk.register({
   f = {
