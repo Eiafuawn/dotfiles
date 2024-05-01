@@ -1,0 +1,1 @@
+/usr/share/polybar/scripts/updates-pacman-aurhelper.sh

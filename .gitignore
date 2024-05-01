@@ -2,3 +2,6 @@
 .config/dmenu
 .config/dwm
 .config/dwmblocks
+.local/share
+.local/state
+.local/pipx

@@ -1,0 +1,4 @@
+#!bin/bash
+
+SESSION_NAME=$(tmux display-message -p '#S')
+tmux detach .s "$SESSION_NAME"
