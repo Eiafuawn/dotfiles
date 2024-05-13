@@ -31,12 +31,13 @@ wk.register({
   },
   l = {
     name = 'lsp-telescope',
-    d = { builtin.lsp_document_diagnostics, 'Find Document Diagnostics' },
+    d = { builtin.diagnostics, 'Find Document Diagnostics' },
+    D = { builtin.lsp_definitions, 'Find Definition' },
     r = { builtin.lsp_references, 'Find References' },
     s = { builtin.lsp_document_symbols, 'Find Document Symbols' },
     i = { builtin.lsp_implementations, 'Find Implementations' },
     q = { builtin.quickfix, 'Find Quickfix' },
-    t = { builtin.tree_sitter, 'Find Treesitter' },
+    t = { builtin.treesitter, 'Find Treesitter' },
   },
 }, { prefix = '<leader>' })
 
